@@ -1,0 +1,130 @@
+:root{
+    --pagebg: #fff;
+    --main: rgb(0, 26, 255);
+    --lightbg: #fff;
+    --bglink: black 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--pagebg);
+}
+
+.container{
+    max-width: 1100px;
+    padding: 10px 0;
+    margin: auto;
+    background: white;
+}
+
+header{
+    font-size: 28px;
+    padding: 10px 0;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--main);
+}
+
+header input{
+    padding: 5px 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid rgb(16, 32, 176);
+}
+
+nav{
+    background: var(--main);
+    color: var(--lightbg);
+    padding: 15px 0;
+}
+
+ul{
+    list-style: none;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li a{
+    color: var(--lightbg);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+ul li.active a,
+ul li:hover a{
+    background: var(--bglink);
+}
+
+.banner{
+    height: 600px;
+    background-image: url("../img/Design\ sem\ nome.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Noto Sans', sans-serif;
+    text-shadow: 5px 5px 4px var(--lightbg);
+}
+
+h2{
+    color: var(--main);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item-img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid aqua;
+    box-shadow: 5px 5px 5px blue;
+}
+
+.item-img:hover{
+    transform: scale(1.2);
+}
+
+.item-name{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.item-name,
+.item-local{
+    font-size: 16px;
+}
+
+footer{
+    border-top: 2px solid blue;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    color: var(--main)
+
+}
