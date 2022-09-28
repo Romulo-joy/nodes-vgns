@@ -6,7 +6,7 @@ const router = Router();
 
 router.get("/", pagecontroller.home);
 router.get("/Brasil",pagecontroller.Brasil);
-router.get("/Estados Unidos",pagecontroller.Estados);
+router.get("/EstadosUnidos",pagecontroller.EstadosUnidos);
 router.get("/Europa",pagecontroller.Europa);
 
 router.get("/search",searchcontroller.search);
