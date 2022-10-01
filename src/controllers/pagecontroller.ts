@@ -1,7 +1,9 @@
 import {Request, Response } from "express";
 import { createMenuObject } from "../helpers/createMenuObject";
+import { local } from "../helpers/models/local";
 
 export const home = (req: Request, res: Response) => {
+  let list = local.getALL();
   res.render("pages/page", {
       menu: createMenuObject('all'),
     banner: {
